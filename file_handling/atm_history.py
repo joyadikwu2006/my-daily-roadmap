@@ -10,4 +10,4 @@ else:
         with open("transaction_history.txt", "a") as file:
             file.write(f"withdrew {amount} naira\n")
 
-        print("Transaction saved successfully.")
+        print("Transaction saved successfully.")  
