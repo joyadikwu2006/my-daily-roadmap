@@ -1,0 +1,2 @@
+today i started learning python file Handling.
+today i learned about append mode.
