@@ -6,3 +6,4 @@ withdrew 3000 naira
 withdrew -4 naira
 withdrew 3000 naira
 withdrew 3000 naira
+withdrew 3000 naira
