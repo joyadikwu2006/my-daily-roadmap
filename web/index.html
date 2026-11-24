@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#17352d" />
+  <meta name="description" content="Mera — thoughtfully made goods from independent sellers." />
+  <title>Mera — Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement">Free delivery on orders over $75 <span>·</span> <a href="#products">Shop now</a></div>
+
+  <header class="header">
+    <a class="brand" href="#" aria-label="Mera home">
+      <span class="brand-mark">M</span>
+      <span>MERA</span>
+    </a>
+    <nav class="nav" aria-label="Primary navigation">
+      <a href="#products">Shop</a>
+      <a href="#categories">Categories</a>
+      <a href="#story">Our story</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchToggle" aria-label="Search">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+      </button>
+      <button class="icon-button cart-button" id="cartButton" aria-label="Shopping bag">
+        <svg viewBox="0 0 24 24"><path d="M5 8h14l-1 12H6L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">THE NEW SEASON EDIT</p>
+        <h1>Made by hand.<br><em>Chosen with care.</em></h1>
+        <p class="hero-text">Discover distinctive goods from independent makers, all in one thoughtful marketplace.</p>
+        <a class="primary-button" href="#products">Explore the collection <span>→</span></a>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=85" alt="Warm neutral living room with handmade furniture" />
+        </div>
+        <div class="floating-card">
+          <span>Featured maker</span>
+          <strong>Atelier Noma</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories" id="categories">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">FIND YOUR FAVORITES</p>
+          <h2>Shop by category</h2>
+        </div>
+        <div class="category-controls">
+          <button class="arrow-button" id="categoryPrev" aria-label="Previous categories">←</button>
+          <button class="arrow-button" id="categoryNext" aria-label="Next categories">→</button>
+        </div>
+      </div>
+      <div class="category-grid" id="categoryGrid">
+        <button class="category-card" data-category="Home"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=700&q=80" alt="Modern home decor"><span>Home</span></button>
+        <button class="category-card" data-category="Fashion"><img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=700&q=80" alt="Fashion accessories"><span>Fashion</span></button>
+        <button class="category-card" data-category="Ceramics"><img src="https://images.unsplash.com/photo-1610701596007-11502861dcfa?auto=format&fit=crop&w=700&q=80" alt="Handmade ceramic bowls"><span>Ceramics</span></button>
+        <button class="category-card" data-category="Wellness"><img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=700&q=80" alt="Natural wellness products"><span>Wellness</span></button>
+      </div>
+    </section>
+
+    <section class="products-section" id="products">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">CURATED FOR YOU</p>
+          <h2>Best-loved pieces</h2>
+        </div>
+        <button class="text-button" id="showAll">View all <span>→</span></button>
+      </div>
+      <div class="search-panel" id="searchPanel">
+        <input id="searchInput" type="search" placeholder="Search products or makers…" aria-label="Search products">
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-image">
+        <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=900&q=85" alt="Independent artisan working in a studio">
+      </div>
+      <div class="story-copy">
+        <p class="eyebrow">OUR STORY</p>
+        <h2>Good things begin<br>with good people.</h2>
+        <p>We bring independent studios, thoughtful makers, and curious customers together. Every purchase supports craft, creativity, and a more personal way to shop.</p>
+        <a class="text-button" href="#">Meet our makers <span>→</span></a>
+      </div>
+    </section>
+
+    <section class="seller-banner">
+      <div>
+        <p class="eyebrow">FOR MAKERS &amp; SMALL BUSINESSES</p>
+        <h2>Your craft deserves<br>the right audience.</h2>
+      </div>
+      <button class="light-button" id="sellerButton">Open your shop <span>→</span></button>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#"><span class="brand-mark">M</span><span>MERA</span></a>
+    <p>Thoughtful goods. Independent makers.</p>
+    <div class="footer-links"><a href="#">Instagram</a><a href="#">Pinterest</a><a href="#">About</a></div>
+  </footer>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="drawer-header"><h2>Your bag</h2><button class="close-button" id="closeCart" aria-label="Close bag">×</button></div>
+    <div class="cart-items" id="cartItems"><div class="empty-cart">Your bag is waiting for something beautiful.</div></div>
+    <div class="cart-footer" id="cartFooter">
+      <div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">$0</strong></div>
+      <button class="primary-button checkout-button" id="checkoutButton">Continue to checkout</button>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <dialog class="modal" id="sellerModal">
+    <button class="close-button modal-close" id="closeSeller" aria-label="Close">×</button>
+    <p class="eyebrow">BECOME A MERA MAKER</p>
+    <h2>Start selling with us</h2>
+    <form id="sellerForm">
+      <label>Business name<input required name="business" placeholder="Your studio name"></label>
+      <label>Email address<input required type="email" name="email" placeholder="you@business.com"></label>
+      <label>What do you make?<select name="category"><option>Home & living</option><option>Fashion</option><option>Ceramics</option><option>Wellness</option><option>Other</option></select></label>
+      <button class="primary-button" type="submit">Apply to open a shop</button>
+    </form>
+  </dialog>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>
